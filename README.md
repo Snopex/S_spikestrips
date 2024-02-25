@@ -1,7 +1,6 @@
-# S_spikestrips
-S_spikestrips Esx , QBcore or standalone
+# S_spikestrips Esx , QBcore or standalone
 
-# Loaf - Spike Strips V2
+# Snopex V2
 
 Spike strip script for FiveM that only bursts the tires that are touching the spikes.
 
@@ -45,12 +44,11 @@ Showcase:
 
 ## Installation
 
-1. Download the latest [release](https://github.com/loaf-scripts/loaf_spikestrips/releases/latest)
-2. Install all [dependencies](#dependencies)
-3. [Add the item](#adding-the-item) to your server
-4. [Configure](#configuration) the script to your liking
-5. Add `ensure loaf_spikestrips` to your server.cfg
-6. Either restart your server, or start the resource by running `refresh` and then `ensure loaf_spikestrips` in your server console
+1. Install all [dependencies](#dependencies)
+2. [Add the item](#adding-the-item) to your server
+3. [Configure](#configuration) the script to your liking
+4. Add `ensure S_spikestrips` to your server.cfg
+5. Either restart your server, or start the resource by running `refresh` and then `ensure S_spikestrips` in your server console
 
 If you use esx_policejob, you can remove the built in functionality by removing `p_ld_stinger_s` from [the table](https://github.com/esx-framework/esx_policejob/blob/c62253c1fc9993e024bc68c50954035419995289/client/main.lua#L1378) in the `-- Enter / Exit entity zone events` thread in `esx_policejob/client/main.lua`.
 
@@ -111,5 +109,5 @@ spikestrip = { name = 'spikestrip', label = 'Spike strip', weight = 500, type = 
 
 The script supports logging via Discord webhooks or [ox_lib](https://overextended.dev/ox_lib/Modules/Logger/Server).
 
-If you wish to use ox_lib, set `Config.LogSystem` to `"ox_lib"`. For discord, set it to `"discord"` and set your webhook in `loaf_spikestrips/server/logs.lua`
+If you wish to use ox_lib, set `Config.LogSystem` to `"ox_lib"`. For discord, set it to `"discord"` and set your webhook in `S_spikestripss/server/logs.lua`
 
